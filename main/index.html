@@ -10,22 +10,8 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">DF</div>
-        <div>
-          <div style="font-weight:700">David Franco</div>
-          <div class="muted" style="font-size:13px">Software Engineer — Integrations & Backend</div>
-        </div>
-      </div>
-
-      <nav>
-        <a href="about_me.html">About</a>
-        <a href="https://github.com/david7franco">Projects</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://www.linkedin.com/in/david7franco/">My LinkedIn</a>
-      </nav>
-    </header>
+    
+    <div id="header"></div>
 
     <main class="hero">
       <section>
@@ -47,11 +33,10 @@
           </div>
 
           <div style="margin-top:18px;display:flex;gap:10px;align-items:center">
-            <a class="btn" href="#contact">Hire / Collaborate</a>
+            <a href="assets\DFrancoITResume.pdf" class="btn" download>Download My Resume (PDF)</a>
             <a style="color:var(--muted);text-decoration:none;font-weight:600" href="#projects">See projects →</a>
           </div>
         </div>
-
         <div id="projects" style="margin-top:18px">
           <h2 style="margin-bottom:12px">Featured projects</h2>
           <div class="projects">
@@ -99,14 +84,10 @@
         
       </aside>
     </main>
-
-    <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div>© David Franco — <span class="muted">Designed for clarity.</span></div>
-      </div>
-    </footer>
+    <div id="footer"></div>
   </div>
-
+  
+  <script src="scripts/global.js"></script>
   <script>
     /* Example lazy ad load
     function loadAd() {
