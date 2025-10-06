@@ -1,0 +1,127 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Franco — Software Engineer</title>
+  <meta name="description" content="David Franco — Software engineer. Portfolio, projects, blog, and contact." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DF</div>
+        <div>
+          <div style="font-weight:700">David Franco</div>
+          <div class="muted" style="font-size:13px">Software Engineer — Integrations & Backend</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="about_me.html">About</a>
+        <a href="https://github.com/david7franco">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.linkedin.com/in/david7franco/">My LinkedIn</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section>
+        <div class="card">
+          <h1>Hey! I’m David. I build integrations, APIs, and tooling that save teams time.</h1>
+          <p class="lead">I have experience designing and maintaining integration pipelines, writing automation scripts in Python, developing SQL queries for analytics and ETL, and building reliable backend services. I enjoy turning messy data into actionable systems.</p>
+
+          <div style="margin-top:16px">
+            <strong>Core skills</strong>
+            <div class="skills">
+              <span class="skill">Python</span>
+              <span class="skill">SQL (Postgres, MySQL, Oracle)</span>
+              <span class="skill">Node.js</span>
+              <span class="skill">APIs / REST</span>
+              <span class="skill">Docker</span>
+              <span class="skill">NetSuite / ERP</span>
+              <span class="skill">CI / CD</span>
+            </div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:10px;align-items:center">
+            <a class="btn" href="#contact">Hire / Collaborate</a>
+            <a style="color:var(--muted);text-decoration:none;font-weight:600" href="#projects">See projects →</a>
+          </div>
+        </div>
+
+        <div id="projects" style="margin-top:18px">
+          <h2 style="margin-bottom:12px">Featured projects</h2>
+          <div class="projects">
+            <article class="proj card">
+              <h3>placeholder</h3>
+              <p>placeholder</p>
+            </article>
+
+            <article class="proj card">
+              <h3>placeholder</h3>
+              <p>placeholder</p>
+            </article>
+
+            <article class="proj card">
+              <h3>placeholder</h3>
+              <p>placeholder</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <aside style="width:100%">
+        <div class="card">
+          <h2>Quick contact</h2>
+          <p class="muted">Email: <a href="mailto:davidandrewfranco@gmail.com" style="color:inherit;text-decoration:underline">davidandrewfranco@gmail.com</a></p>
+          <p class="muted">Phone Number: <a href="tel:8562780205" style="color:inherit;text-decoration:underline">(856-278-0205)</a></p>
+          <div class="contact">
+            <a class="btn" href="mailto:davidandrewfranco@gmail.com">Email me</a>
+            <a class="btn" href="#projects">View more</a>
+          </div>
+
+          <div style="margin-top:18px">
+            <strong style="display:block;margin-bottom:8px">Support / Monetize</strong>
+            <div id="ad-slot" class="ad-placeholder">Ad / Sponsor space — unobtrusive by design</div>
+            <div style="margin-top:12px">
+              <a href="#" style="color:var(--muted);text-decoration:underline">Sponsor this work</a>
+            </div>
+          </div>
+
+          <div style="margin-top:18px">
+            <small class="muted">Tip: keep ads unobtrusive on the main resume. Use the blog or resource pages to carry most monetized content.</small>
+          </div>
+        </div>
+
+        
+      </aside>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© David Franco — <span class="muted">Designed for clarity.</span></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    /* Example lazy ad load
+    function loadAd() {
+      if (window.adLoaded) return; window.adLoaded = true;
+      const s = document.createElement('script');
+      s.src = 'https://example-ad-network.com/ad.js';
+      s.async = true;
+      document.body.appendChild(s);
+    }
+    const observer = new IntersectionObserver((entries)=>{
+      if(entries.some(e=>e.isIntersecting)) loadAd();
+    });
+    const slot = document.getElementById('ad-slot');
+    if(slot) observer.observe(slot);
+    */
+  </script>
+</body>
+</html>

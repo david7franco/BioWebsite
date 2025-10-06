@@ -1,0 +1,62 @@
+
+<!-- contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — David Franco</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DF</div>
+        <div>
+          <div style="font-weight:700">David Franco</div>
+          <div class="muted" style="font-size:13px">Software Engineer — Integrations & Backend</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="card" style="margin-top:32px;">
+      <h1>Contact</h1>
+      <p class="lead">I’m always open to hearing about new opportunities, collaborations, or interesting problems to solve. Whether you’re looking to hire, partner on a project, or just connect, feel free to reach out below.</p>
+
+      <form style="display:grid;gap:16px;margin-top:24px;max-width:480px">
+        <div>
+          <label for="name">Name</label><br>
+          <input id="name" name="name" type="text" placeholder="Your name" style="width:100%;padding:10px;border-radius:8px;border:none;background:var(--glass);color:#e6eef8;">
+        </div>
+        <div>
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" placeholder="you@example.com" style="width:100%;padding:10px;border-radius:8px;border:none;background:var(--glass);color:#e6eef8;">
+        </div>
+        <div>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="5" placeholder="Your message" style="width:100%;padding:10px;border-radius:8px;border:none;background:var(--glass);color:#e6eef8;"></textarea>
+        </div>
+        <button type="submit" class="btn" style="width:max-content">Send Message</button>
+      </form>
+
+      <div style="margin-top:24px">
+        <p class="muted">Or email me directly at <a href="mailto:you@example.com" style="color:inherit;text-decoration:underline">you@example.com</a>.</p>
+      </div>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© David Franco — <span class="muted">Contact Page</span></div>
+        <div class="muted">Built with HTML & CSS.</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

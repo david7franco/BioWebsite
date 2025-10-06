@@ -1,0 +1,43 @@
+/* style.css */
+:root {
+    --bg:#0f1724;
+    --card:#0b1220;
+    --muted:#94a3b8;
+    --accent:#7c3aed;
+    --glass: rgba(255,255,255,0.03);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  }
+  * { box-sizing:border-box; }
+  html, body { height:100%; }
+  body {
+    margin:0; background:linear-gradient(180deg,var(--bg), #071029 120%);
+    color:#e6eef8; -webkit-font-smoothing:antialiased; padding:24px;
+  }
+  .container { max-width:1100px; margin:0 auto; }
+  header { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+  .brand { display:flex; align-items:center; gap:12px; }
+  .logo { width:56px; height:56px; border-radius:12px; background:linear-gradient(135deg,var(--accent),#3b82f6); display:flex; align-items:center; justify-content:center; font-weight:700; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:14px; }
+  nav a:hover { color:#fff; }
+  .hero { display:grid; grid-template-columns:1fr 360px; gap:28px; margin-top:32px; align-items:start; }
+  .card { background:var(--card); padding:20px; border-radius:14px; box-shadow:0 6px 18px rgba(2,6,23,0.6); }
+  h1 { margin:0; font-size:28px; }
+  h2 { margin:0; font-size:18px; color:var(--muted); }
+  p.lead { color:var(--muted); line-height:1.6; }
+  .skills { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .skill { background:var(--glass); padding:8px 10px; border-radius:999px; font-size:13px; color:var(--muted); }
+  .projects { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:18px; }
+  .proj { padding:14px; border-radius:10px; background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); }
+  .proj h3 { margin:0 0 8px 0; }
+  .proj p { margin:0; color:var(--muted); font-size:14px; }
+  aside .ad-placeholder { height:250px; border-radius:10px; background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:14px; }
+  .contact { display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
+  .btn { background:var(--accent); color:#fff; padding:10px 14px; border-radius:10px; text-decoration:none; font-weight:600; }
+  footer { margin-top:40px; color:var(--muted); font-size:13px; }
+  @media (max-width:900px) {
+    .hero { grid-template-columns:1fr; }
+    .projects { grid-template-columns:1fr; }
+    nav { display:none; }
+  }
+  .muted { color:var(--muted); }
+  
